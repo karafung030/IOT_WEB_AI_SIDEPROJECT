@@ -1,4 +1,4 @@
-# flutter_app_plant_fyp
+# flutter_app_plant
 
 A new Flutter project.
 
