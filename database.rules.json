@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "devices": {
+      ".read": true,
+      "$deviceId": {
+        ".write": "newData.hasChildren(['id','timestamp','device_key']) && newData.child('id').val() === $deviceId && newData.child('device_key').val() === '1234567890'",
+        ".indexOn": ["timestamp"]
+      }
+    },
+    "sensorData": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["timestamp"]
+    }
+  }
+}
